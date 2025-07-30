@@ -7,6 +7,18 @@
         { "from": "Resistor", "to": "GND" }
       ],
       "notes": "Always use a resistor in series with the LED to prevent damage."
+    },
+  
+    "button_led_circuit": {
+      "components": ["LED", "Resistor", "Button", "Arduino UNO"],
+      "connections": [
+        { "from": "Arduino Pin 2", "to": "Button" },
+        { "from": "Button", "to": "GND" },
+        { "from": "Arduino Pin 13", "to": "LED Anode" },
+        { "from": "LED Cathode", "to": "Resistor" },
+        { "from": "Resistor", "to": "GND" }
+      ],
+      "notes": "The button is connected to pin 2 for input. Pressing it turns on the LED."
     }
   }
   
