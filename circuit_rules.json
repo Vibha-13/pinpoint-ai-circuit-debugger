@@ -1,0 +1,12 @@
+{
+    "led_circuit": {
+      "components": ["LED", "Resistor", "Arduino UNO"],
+      "connections": [
+        { "from": "Arduino Pin 13", "to": "LED Anode" },
+        { "from": "LED Cathode", "to": "Resistor" },
+        { "from": "Resistor", "to": "GND" }
+      ],
+      "notes": "Always use a resistor in series with the LED to prevent damage."
+    }
+  }
+  
